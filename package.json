@@ -1,0 +1,60 @@
+{
+  "name": "svelte-tauri-filedrop",
+  "version": "1.0.0",
+  "description": "Tauri file drop handling component for Svelte",
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev:web": "vite dev",
+    "package": "svelte-package",
+    "lint": "prettier --check src *.js && eslint src *.js && svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write src *.js && eslint --fix src *.js"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.2.0"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "^1.0.0",
+    "@sveltejs/package": "^1.0.0",
+    "@tauri-apps/cli": "^1.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.9.0",
+    "sass": "^1.56.2",
+    "svelte": "^3.55.0",
+    "svelte-check": "^2.10.2",
+    "typescript": "^4.9.4"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/probablykasper/svelte-tauri-filedrop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/probablykasper/svelte-tauri-filedrop/issues"
+  },
+  "author": {
+    "name": "Kasper Henningsen",
+    "url": "https://kasper.space"
+  },
+  "keywords": [
+    "tauri",
+    "svelte",
+    "file",
+    "drag",
+    "drop",
+    "dropzone"
+  ],
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "pluginSearchDirs": [
+      "."
+    ]
+  }
+}
