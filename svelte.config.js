@@ -1,8 +1,15 @@
+import preprocess from 'svelte-preprocess'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
-  preprocess: vitePreprocess(),
+  preprocess: [
+    vitePreprocess(),
+    preprocess({
+      postcss: true,
+    }),
+  ],
 
-  kit: {},
+  kit: {
+  }
 }

@@ -1,0 +1,111 @@
+$black: #040605;
+$white: #f5f7f6;
+$blue-white: #e1e7e8;
+$pink: #fd588a;
+$tangerine: #f86a6c;
+
+
+.title-bar {
+	position: relative;
+	width: 100%;
+	display: table;
+  text-align: right;
+  background:$white;
+  padding: 0.5rem;
+  margin-bottom: 0;
+
+  &:after {
+  	display: table;
+  	clear: both;
+  }
+}
+
+.title-bar__burger {
+	display: block;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 38px;
+	height: 30px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	background:none;
+
+  &:focus {
+  	outline: none;
+  }
+}
+
+.burger__lines {
+  display: block;
+  position: absolute;
+  width: 18px;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 1px;
+  background: $black;
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    content: "";
+  }
+
+  &:before {
+    top: -5px;
+  }
+
+  &:after {
+    bottom: -5px;
+  }
+}
+
+.word-editor__contain {
+	position: relative;
+	left: 0;
+	right: 0;
+	border-radius: 0;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	max-width: 1020px;
+	min-width: 450px;
+	margin: 1rem auto;
+	background-color: white;
+	box-shadow: 5px 5px 72px rgba(30, 46, 50, 0.5);
+}
+
+.word-editor__sidebar {
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	background:linear-gradient(120deg, lighten($blue-white, 5%), $blue-white);
+	padding-bottom: 0.7rem;
+	
+	@media screen and (min-width:55em) {
+		position: absolute;
+		height: 100%;
+		width: 30%;
+		float: left;
+		margin-bottom: 0;
+	}
+}
+
+.word-editor__sidebar .content{
+	padding: 2rem 1.5rem 2rem 4rem;
+	color: $black;
+}
